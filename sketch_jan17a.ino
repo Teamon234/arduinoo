@@ -15,6 +15,9 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
+int led3 = D1;
+int gnd3 = D2;
+
 char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
@@ -62,8 +65,6 @@ void setup()
   // Setup a function to be called every second
   timer.setInterval(1000L, myTimerEvent);
 } 
-int led3 = D1;
-int gnd3 = D2;
 
 void loop()
 {
