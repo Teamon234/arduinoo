@@ -40,6 +40,7 @@ void setup()
   // Setup a function to be called every second
   timer.setInterval(1000L, myTimerEvent);
   pinMode(ledPin, OUTPUT);
+  pinMode(gndPin, OUTPUT);
 } 
 
 void loop()
