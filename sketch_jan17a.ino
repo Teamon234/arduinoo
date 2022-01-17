@@ -39,6 +39,7 @@ void setup()
 
   // Setup a function to be called every second
   timer.setInterval(1000L, myTimerEvent);
+  pinMode(ledPin, OUTPUT);
 } 
 
 void loop()
@@ -51,9 +52,6 @@ void loop()
   }
 const int ledPin = 1; // welche pin ist d1,d2 nochmal 
 
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
 
 void loop() {
   digitalWrite(ledPin, HIGH);
