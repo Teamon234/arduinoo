@@ -73,6 +73,8 @@ BLYNK_WRITE(V0)
 // This function is called every time the device is connected to the Blynk.Cloud
 BLYNK_CONNECTED()
 {
+  Blynk.syncVirtual(V0);  // will cause BLYNK_WRITE(V0) to be executed
+
   // Change Web Link Button message to "Congratulations!
 
 }
