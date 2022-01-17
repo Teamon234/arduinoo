@@ -15,8 +15,8 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-int led3 = D1;
-int gnd3 = D2;
+int ledPin = D1;
+int gndPin = D2;
 
 char auth[] = BLYNK_AUTH_TOKEN;
 
@@ -120,14 +120,7 @@ BLYNK_WRITE(V5)
       digitalWrite(D1,LOW);
       digitalWrite(D2,LOW);
 
-
-      Blynk.virtualWrite(V1,0);
-      Blynk.virtualWrite(V2,0);
-      Blynk.virtualWrite(V3,0);
-      Blynk.virtualWrite(V4,0);
-    }
-    }
-    }
-    }
-  }
-}
+{
+  // You can send any value at any time.
+  // Please don't send more that 10 values per second.
+  Blynk.virtualWrite
