@@ -83,13 +83,6 @@ void myTimerEvent()
   Blynk.virtualWrite(V2, millis() / 1000);
 }
 
-
-void setup()
-{
-  pinMode(D1,OUTPUT);
-  pinMode(D2,OUTPUT);
-}
-
 BLYNK_WEITE(V0)
 {
   if(param.asInt() ==1)
