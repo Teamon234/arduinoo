@@ -52,14 +52,6 @@ void loop()
   // to avoid delay() function!
   }
 
-
-
-void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(1000);
-  digitalWrite(ledPin,LOW);
-  delay(1000);
-}
 // This function is called every time the Virtual Pin 0 state changes
 BLYNK_WRITE(V0)
 {
@@ -68,6 +60,10 @@ BLYNK_WRITE(V0)
 
   // Update state
   Blynk.virtualWrite(V1, value);
+  digitalWrite(ledPin, HIGH);
+  delay(1000);
+  digitalWrite(ledPin,LOW);
+  delay(1000);
 }
 
 // This function is called every time the device is connected to the Blynk.Cloud
