@@ -51,7 +51,7 @@ void loop()
   // Check other examples on how to communicate with Blynk. Remember
   // to avoid delay() function!
   }
-const int ledPin = 1; // welche pin ist d1,d2 nochmal 
+
 
 
 void loop() {
