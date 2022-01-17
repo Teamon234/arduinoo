@@ -83,7 +83,7 @@ void myTimerEvent()
   Blynk.virtualWrite(V2, millis() / 1000);
 }
 
-BLYNK_WEITE(V0)
+BLYNK_WRITE(V0)
 {
   if(param.asInt() ==1)
   {
