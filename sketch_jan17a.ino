@@ -37,10 +37,8 @@ BLYNK_WRITE(V0)
 // This function is called every time the device is connected to the Blynk.Cloud
 BLYNK_CONNECTED()
 {
-  // Change Web Link Button message to "Congratulations!"
-  Blynk.setProperty(V3, "offImageUrl", "https://static-image.nyc3.cdn.digitaloceanspaces.com/general/fte/congratulations.png");
-  Blynk.setProperty(V3, "onImageUrl",  "https://static-image.nyc3.cdn.digitaloceanspaces.com/general/fte/congratulations_pressed.png");
-  Blynk.setProperty(V3, "url", "https://docs.blynk.io/en/getting-started/what-do-i-need-to-blynk/how-quickstart-device-was-made");
+  // Change Web Link Button message to "Congratulations!
+
 }
 
 // This function sends Arduino's uptime every second to Virtual Pin 2.
@@ -63,7 +61,9 @@ void setup()
 
   // Setup a function to be called every second
   timer.setInterval(1000L, myTimerEvent);
-}
+} 
+int led3 = D1;
+int gnd3 = D2;
 
 void loop()
 {
